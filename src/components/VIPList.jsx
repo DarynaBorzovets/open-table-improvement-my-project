@@ -1,5 +1,5 @@
 import VIPCard from './VIPCard';
-import { Guests } from '../constants/index';
+import {Guests } from '../constants/index';
 
 const VIPList = () => {
   return (
@@ -24,4 +24,4 @@ const VIPList = () => {
   );
 };
 
-export default VIPList;
+export default VIPList; 

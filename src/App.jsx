@@ -1,12 +1,11 @@
 import './index.css';
 import GuestList from './components/GuestList';
-import GuestCard from './components/GuestCard';
 import VIPList from './components/VIPList'
-
+import Navbar from './components/Navbar'
 const App = () => {
   return (
        <>
-        <GuestCard/>
+       <Navbar/>
         <GuestList/>
         <VIPList/>
         </>

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const VIPCard = ({ vip }) => {
-  const { name,  tags, reservationTime, notes, } = vip;
+  const { name, tags, reservationTime, notes} = vip;
 
   return (
     <div className="bg-gray-200 p-4 rounded shadow-md grid grid-cols-4">
