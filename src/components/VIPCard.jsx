@@ -8,8 +8,7 @@ const VIPCard = ({ vip }) => {
       <p>{reservationTime}</p>
       <p>{tags.join(', ')}</p>
       <p>{notes}</p>
-     
-    </div>
+      </div>
   );
 };
 

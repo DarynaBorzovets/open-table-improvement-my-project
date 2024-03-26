@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import GuestCard from './GuestCard';
 import { Guests } from '../constants/index';
 
@@ -15,19 +14,6 @@ const GuestList = () => {
       </div>
     </div>
   );
-};
-
-GuestList.propTypes = {
-  guest: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      bookingStatus: PropTypes.string.isRequired,
-      tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-      reservationTime: PropTypes.string.isRequired,
-      notes: PropTypes.string.isRequired,
-      table: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export default GuestList;
