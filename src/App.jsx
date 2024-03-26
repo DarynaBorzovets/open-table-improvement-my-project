@@ -1,14 +1,17 @@
+import './index.css';
+import GuestList from './components/GuestList';
+import GuestCard from './components/GuestCard';
 
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
-  )
-}
+       <>
+        <GuestCard/>
+        <GuestList/>
+        </>
+  );
+};
 
-export default App
+
+
+export default App;
