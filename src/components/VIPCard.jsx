@@ -1,34 +1,28 @@
 import PropTypes from 'prop-types';
 
 const VIPCard = ({ vip }) => {
-  const {name, tags, reservationTime, notes, } = vip;
+  const { name,  tags, reservationTime, notes, } = vip;
+
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <p>{name}</p>
-      <p>{reservationTime}</p>
-      <p>{tags.join(', ')}</p>
-      <p>{notes}</p>
-      </div>
+    <div className="bg-gray-200 p-4 rounded shadow-md grid grid-cols-4">
+      {/* Display VIP card content in line */}
+      <div>{reservationTime}</div>
+      <div>{name}</div>
+      <div>{tags.join(', ')}</div>
+      <div>{notes}</div>
+    </div>
   );
 };
 
 VIPCard.propTypes = {
   vip: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    reservationTime: PropTypes.string.isRequired,
+    bookingStatus: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    reservationTime: PropTypes.string.isRequired,
     notes: PropTypes.string.isRequired,
-  }),
-};
-
-VIPCard.defaultProps = {
-  vip: {
-    reservationTime: '',
-    name: '',
-    tags: [],
-    notes: '',
-  },
+    table: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default VIPCard;
-

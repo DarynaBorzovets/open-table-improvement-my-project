@@ -1,7 +1,7 @@
 const Guests = [
     {
       name: 'Daryna Borzovets',
-      reservationTime: '6pm',
+      reservationTime: '7pm',
       reservationDate: '2024-04-01',
       bookingStatus: 'Confirmed',
       tags: ['VIP', 'Birthday'],
@@ -11,7 +11,7 @@ const Guests = [
     
     {
       name: 'Max Lee',
-      reservationTime: '7pm',
+      reservationTime: '6pm',
       reservationDate: '2024-04-01',
       bookingStatus: 'Pending',
       tags: ['Regular Guest'],
