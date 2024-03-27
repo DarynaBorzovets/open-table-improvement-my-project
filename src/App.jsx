@@ -3,6 +3,7 @@ import './index.css';
 import GuestList from './components/GuestList';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
+import VIPList from './components/VIPList'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/project" element={<GuestList />} />
+          <Route path="/VIPList" element={<VIPList />} />
         </Routes>
       </div>
     </Router>
