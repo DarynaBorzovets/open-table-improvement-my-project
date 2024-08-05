@@ -10,7 +10,7 @@ const GuestList = () => {
           Guest List
           <Link
             to="/VIPList" 
-            className="bg-gray-500 hover:bg-gray-700 text-white hover:text-red-500 font-bold py-2 px-4 ml-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-gray-500 hover:bg-gray-700 text-white hover:text-pink-500 font-bold py-2 px-4 ml-4 rounded focus:outline-none focus:shadow-outline"
           >
             Print VIP List
           </Link>
